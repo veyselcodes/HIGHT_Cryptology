@@ -1,0 +1,352 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TOP_UART.vhd:28]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+	Parameter c_stopbit bound to: 2 - type: integer 
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+	Parameter c_stopbit bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'uart_transmitter' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TM_UART.vhd:6' bound to instance 'i_uart_tx' of component 'uart_transmitter' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TOP_UART.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'uart_transmitter' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TM_UART.vhd:21]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+	Parameter c_stopbit bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_transmitter' (1#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TM_UART.vhd:21]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+INFO: [Synth 8-3491] module 'uart_receiver' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/RC_UART.vhd:6' bound to instance 'i_uart_rx' of component 'uart_receiver' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TOP_UART.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'uart_receiver' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/RC_UART.vhd:19]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_receiver' (2#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/RC_UART.vhd:19]
+INFO: [Synth 8-3491] module 'HIGHT_Encryption' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:9' bound to instance 'i_HIGHT_Encryption' of component 'HIGHT_Encryption' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TOP_UART.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'HIGHT_Encryption' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:25]
+INFO: [Synth 8-3491] module 'HIGHT_KeySchedule' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_KeySchedule.vhd:6' bound to instance 'i_HIGHT_KeySchedule' of component 'HIGHT_KeySchedule' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'HIGHT_KeySchedule' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_KeySchedule.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'HIGHT_KeySchedule' (3#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_KeySchedule.vhd:17]
+INFO: [Synth 8-3491] module 'HIGHT_InitialTransformation' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_InitialTransformation.vhd:7' bound to instance 'i_HIGHT_InitialTransformation' of component 'HIGHT_InitialTransformation' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'HIGHT_InitialTransformation' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_InitialTransformation.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'HIGHT_InitialTransformation' (4#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_InitialTransformation.vhd:18]
+INFO: [Synth 8-3491] module 'HIGHT_RoundFunction' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_RoundFunction.vhd:7' bound to instance 'i_HIGHT_RoundFunction' of component 'HIGHT_RoundFunction' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'HIGHT_RoundFunction' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_RoundFunction.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'HIGHT_RoundFunction' (5#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_RoundFunction.vhd:23]
+INFO: [Synth 8-3491] module 'HIGHT_FinalTransformation' declared at 'C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_FinalTransformation.vhd:6' bound to instance 'i_HIGHT_FinalTransformation' of component 'HIGHT_FinalTransformation' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'HIGHT_FinalTransformation' [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_FinalTransformation.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'HIGHT_FinalTransformation' (6#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_FinalTransformation.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'HIGHT_Encryption' (7#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/HIGHT_Encryption.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [C:/Users/recep/Desktop/Encryption_HIGHT/rtl/TOP_UART.vhd:28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1173.684 ; gain = 148.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.684 ; gain = 148.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1173.684 ; gain = 148.949
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1173.684 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/recep/Desktop/HIGHT_Encrypt/HIGHT_Encrypt.srcs/constrs_1/new/HIGHT_.xdc]
+Finished Parsing XDC File [C:/Users/recep/Desktop/HIGHT_Encrypt/HIGHT_Encrypt.srcs/constrs_1/new/HIGHT_.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/recep/Desktop/HIGHT_Encrypt/HIGHT_Encrypt.srcs/constrs_1/new/HIGHT_.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1177.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1177.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_transmitter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_receiver'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'HIGHT_RoundFunction'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle | 000000000000000000000000000000001 |                           000000
+                      r0 | 000000000000000000000000000000010 |                           000001
+                      r1 | 000000000000000000000000000000100 |                           000010
+                      r2 | 000000000000000000000000000001000 |                           000011
+                      r3 | 000000000000000000000000000010000 |                           000100
+                      r4 | 000000000000000000000000000100000 |                           000101
+                      r5 | 000000000000000000000000001000000 |                           000110
+                      r6 | 000000000000000000000000010000000 |                           000111
+                      r7 | 000000000000000000000000100000000 |                           001000
+                      r8 | 000000000000000000000001000000000 |                           001001
+                      r9 | 000000000000000000000010000000000 |                           001010
+                     r10 | 000000000000000000000100000000000 |                           001011
+                     r11 | 000000000000000000001000000000000 |                           001100
+                     r12 | 000000000000000000010000000000000 |                           001101
+                     r13 | 000000000000000000100000000000000 |                           001110
+                     r14 | 000000000000000001000000000000000 |                           001111
+                     r15 | 000000000000000010000000000000000 |                           010000
+                     r16 | 000000000000000100000000000000000 |                           010001
+                     r17 | 000000000000001000000000000000000 |                           010010
+                     r18 | 000000000000010000000000000000000 |                           010011
+                     r19 | 000000000000100000000000000000000 |                           010100
+                     r20 | 000000000001000000000000000000000 |                           010101
+                     r21 | 000000000010000000000000000000000 |                           010110
+                     r22 | 000000000100000000000000000000000 |                           010111
+                     r23 | 000000001000000000000000000000000 |                           011000
+                     r24 | 000000010000000000000000000000000 |                           011001
+                     r25 | 000000100000000000000000000000000 |                           011010
+                     r26 | 000001000000000000000000000000000 |                           011011
+                     r27 | 000010000000000000000000000000000 |                           011100
+                     r28 | 000100000000000000000000000000000 |                           011101
+                     r29 | 001000000000000000000000000000000 |                           011110
+                     r30 | 010000000000000000000000000000000 |                           011111
+                     r31 | 100000000000000000000000000000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'HIGHT_RoundFunction'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               s_receive |                              001 |                               00
+               s_process |                              010 |                               01
+              s_transmit |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 260   
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 68    
+	   3 Input      8 Bit         XORs := 64    
+	   4 Input      8 Bit         XORs := 64    
++---Registers : 
+	              128 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  33 Input 2112 Bit        Muxes := 2     
+	   2 Input 2048 Bit        Muxes := 1     
+	   2 Input 1024 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 3     
+	  33 Input   33 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   4 Input   11 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 10    
+	  33 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   288|
+|3     |LUT1   |    97|
+|4     |LUT2   |   742|
+|5     |LUT3   |   139|
+|6     |LUT4   |   450|
+|7     |LUT5   |   539|
+|8     |LUT6   |   671|
+|9     |FDRE   |  2659|
+|10    |IBUF   |     2|
+|11    |OBUF   |     1|
+|12    |OBUFT  |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:58 . Memory (MB): peak = 1177.359 ; gain = 148.949
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1177.359 ; gain = 152.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1177.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 288 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1177.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1177.359 ; gain = 152.625
+INFO: [Common 17-1381] The checkpoint 'C:/Users/recep/Desktop/HIGHT_Encrypt/HIGHT_Encrypt.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 30 14:36:24 2021...

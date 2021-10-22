@@ -1,0 +1,19 @@
+PDF-4
+Specification
+Design Principles
+Security Analysis
+Hardware Implementation
+PDF-5
+Related Works
+Software Implementation
+PDF-6
+Impossible Differential Attack on HIGHT
+PDF-7
+Related Work
+Research Flow
+The HIGHT Algorithm
+SCALAR Design
+Pipelined Design
+Implementation Results
+PDF-8
+Technical Background
